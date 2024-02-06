@@ -1,0 +1,12 @@
+@Library('mylibrary')_
+node('built-in')
+{
+    stage('continous download_master')
+    {
+        cicd1.newGit("https://github.com/nagaprasady/maven.git")
+    }
+    stage('continous build_master')
+    {
+        cicd1.mavenbuild()
+    }
+      }
