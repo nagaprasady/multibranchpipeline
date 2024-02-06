@@ -1,7 +1,7 @@
 @Library('mylibrary')_
 node('built-in')
 {
-    stage('continous download_loans')
+    stage('continous download_loan')
     {
         cicd1.newGit("https://github.com/nagaprasady/maven.git")
     }
