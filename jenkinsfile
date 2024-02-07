@@ -5,8 +5,4 @@ node('built-in')
     {
         cicd1.newGit("https://github.com/nagaprasady/maven.git")
     }
-    stage('continous build_master')
-    {
-        cicd1.mavenbuild()
-    }
-      }
+}
