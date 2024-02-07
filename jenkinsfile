@@ -5,13 +5,9 @@ node('built-in')
     {
         cicd1.newGit("https://github.com/nagaprasady/maven.git")
     }
-    stage('continous build_loans')
+    stage("list files")
     {
-        cicd1.mavenbuild()
+        sh "ls -la"
     }
-    stage('continous deploy_loans')
-    {
-        cicd1.tomcatdeploy("multibranchpipeline","172.31.38.18","newtest1")
-    }
-   }
+}
 
